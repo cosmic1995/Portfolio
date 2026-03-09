@@ -1,0 +1,13 @@
+{
+    "name": "binay-portfolio",
+    "version": "1.0.0",
+    "description": "Binay Yadav Portfolio",
+    "main": "index.html",
+    "scripts": {
+        "dev": "serve . -p 8080",
+        "start": "serve . -p 8080"
+    },
+    "devDependencies": {
+        "serve": "^14.2.0"
+    }
+}
