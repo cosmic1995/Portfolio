@@ -11514,7 +11514,7 @@ table {
 .ph-bold {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Bold" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -17669,7 +17669,7 @@ table {
 .ph-duotone {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Duotone" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -32800,7 +32800,7 @@ table {
 .ph-fill {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Fill" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -38951,7 +38951,7 @@ table {
 .ph-light {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Light" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -45102,7 +45102,7 @@ table {
 .ph {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -51253,7 +51253,7 @@ table {
 .ph-thin {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Thin" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -57764,6 +57764,7 @@ table {
 /* Slide styles end */
 .swiper-virtual .swiper-slide {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
      -moz-transform: translateZ(0);
           transform: translateZ(0);
@@ -57905,7 +57906,7 @@ table {
 }
 
 /* Navigation font end */
-:root {
+/* :root { */
   /*
   --swiper-pagination-color: var(--swiper-theme-color);
   --swiper-pagination-left: auto;
@@ -58177,7 +58178,7 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-:root {
+/* :root { */
   /*
   --swiper-scrollbar-border-radius: 10px;
   --swiper-scrollbar-top: auto;
@@ -58507,6 +58508,7 @@ button.swiper-pagination-bullet {
   -webkit-text-size-adjust: 100%;
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   outline: none;
 }
 .pswp * {
@@ -58570,6 +58572,7 @@ button.swiper-pagination-bullet {
      -moz-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: opacity;
 }
 
@@ -58637,6 +58640,7 @@ button.swiper-pagination-bullet {
 .pswp__container,
 .pswp__zoom-wrap {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .pswp__item {
@@ -58662,6 +58666,7 @@ button.swiper-pagination-bullet {
 */
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /*
@@ -58727,6 +58732,7 @@ button.swiper-pagination-bullet {
   cursor: pointer;
   overflow: visible;
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   border: 0;
   padding: 0;
@@ -58888,6 +58894,7 @@ button.swiper-pagination-bullet {
   -moz-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: opacity;
 }
 
@@ -58918,6 +58925,7 @@ button.swiper-pagination-bullet {
   transition: transform 0.25s;
   transition: transform 0.25s, -webkit-transform 0.25s, -moz-transform 0.25s;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .pswp__share-tooltip a {
@@ -59246,6 +59254,7 @@ a.pswp__share--download:hover {
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: opacity;
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   -moz-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
@@ -59333,6 +59342,7 @@ a.pswp__share--download:hover {
   position: fixed;
   outline: none !important;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -59447,6 +59457,7 @@ button.mfp-close, button.mfp-arrow {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   outline: none;
   padding: 0;
