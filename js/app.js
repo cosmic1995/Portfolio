@@ -91,26 +91,26 @@ imgLoad.on('done', instance => {
 });
 
 function hideLoader() {
-  gsap.to(".loader__count", { duration: 0.8, ease: 'power2.in', y: "100%", delay: 1.8 });
-  gsap.to(".loader__wrapper", { duration: 0.8, ease: 'power4.in', y: "-100%", delay: 2.2 });
+  gsap.to(".loader__count", { duration: 0.6, ease: 'power2.in', y: "100%", delay: 0.4 });
+  gsap.to(".loader__wrapper", { duration: 0.6, ease: 'power4.in', y: "-100%", delay: 0.8 });
   setTimeout(() => {
     document.getElementById("loader").classList.add("loaded");
-  }, 3200);
+  }, 1400);
 }
 
 function pageAppearance() {
   gsap.set(loadingItems, { opacity: 0 })
   gsap.to(loadingItems, { 
-    duration: 1.1,
+    duration: 0.8,
     ease: 'power4',
     startAt: {y: 120},
     y: 0,
     opacity: 1,
-    delay: 0.8,
-    stagger: 0.08
-  }, '>-=1.1');
+    delay: 0.2,
+    stagger: 0.05
+  }, '>-=0.8');
   gsap.set(fadeInItems, { opacity: 0 });
-  gsap.to(fadeInItems, { duration: 0.8, ease: 'none', opacity: 1, delay: 3.2 });
+  gsap.to(fadeInItems, { duration: 0.8, ease: 'none', opacity: 1, delay: 1.4 });
 }
 // --------------------------------------------- //
 // Loader & Loading Animation End
